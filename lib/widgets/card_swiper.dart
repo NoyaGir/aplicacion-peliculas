@@ -16,8 +16,9 @@ class CardSwiper extends StatelessWidget {
     height: size.height * 0.5,
     child: Swiper(
       itemCount: movies.length,
-      viewportFraction: 0.8,
-      scale: 0.9,
+     layout: SwiperLayout.STACK, // Vuelve al diseño apilado
+     itemWidth: size.width * 0.6, // Define el ancho de la tarjeta central
+     itemHeight: size.height * 0.4, // Define el alto de la tarjeta central
       itemBuilder: (_, int index){
         final movie = movies[index];
         movie.heroId = 'swiper-${movie.id}';

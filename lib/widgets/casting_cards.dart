@@ -29,7 +29,7 @@ class CastingCards extends StatelessWidget {
         return Container(
           margin: const EdgeInsets.only(bottom: 30),
           width: double.infinity,
-          height: 180,
+          height: 260,
           // "Rueda de oruga" para los actores
           child: ListView.builder(
             itemCount: cast.length,
@@ -52,7 +52,6 @@ class _CastCard extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 10),
       width: 110,
-      height: 100,
       child: Column(
         children: [
           ClipRRect(
@@ -64,7 +63,7 @@ class _CastCard extends StatelessWidget {
               width: 100,
               fit: BoxFit.cover,
               imageErrorBuilder: (context, error, stackTrace) {
-                  return Image.asset('assets/no-image.png', height: 140, width: 100, fit: BoxFit.cover);
+                  return Image.asset('assets/noimagen.gif', height: 140, width: 100, fit: BoxFit.cover);
               },
             ),
           ),

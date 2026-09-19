@@ -58,7 +58,7 @@ class _MoviePoster extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 130,
-      height: 190,
+      //height: 260,
       margin: const EdgeInsets.symmetric(horizontal: 10),
       child: Column(
         children: [
@@ -69,8 +69,8 @@ class _MoviePoster extends StatelessWidget {
               child: FadeInImage(
                 placeholder: const AssetImage('assets/cargando.gif'),
                 image: NetworkImage(movie.fullPosterImg),
-                width: 130,
-                height: 190,
+                width: 143,
+                height: 170,
                 fit: BoxFit.cover,
                 imageErrorBuilder: (context, error, stackTrace) {
                   return Image.asset('assets/no-image.png', width: 130, height: 190, fit: BoxFit.cover);
