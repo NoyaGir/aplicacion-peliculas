@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 class Movie {
-  String? heroId; // <-- Agrega esta línea
+  String? heroId; 
   bool adult;
   String backdropPath;
   List<int> genreIds;
